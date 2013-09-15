@@ -1,0 +1,71 @@
+/* line 5, ../sass/partials/_grid.scss */
+.wrapper {
+  max-width: 70em;
+  width: 100%;
+}
+/* line 9, ../sass/partials/_grid.scss */
+.wrapper * {
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/partials/_grid.scss */
+.wrapper, .makeItSimple, .itIsSimple {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 29, ../sass/partials/_grid.scss */
+.wrapper:before, .makeItSimple:before, .itIsSimple:before, .wrapper:after, .makeItSimple:after, .itIsSimple:after {
+  content: " ";
+  display: table;
+}
+
+/* line 33, ../sass/partials/_grid.scss */
+.wrapper:after, .makeItSimple:after, .itIsSimple:after {
+  clear: both;
+}
+
+/* line 41, ../sass/partials/_grid.scss */
+.wrapper, .makeItSimple, .itIsSimple {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+/* line 3, ../sass/screen.scss */
+* {
+  font-family: Arial;
+}
+
+/* line 11, ../sass/screen.scss */
+.mainContent {
+  padding: 0 0.8em;
+  float: left;
+  width: 66.66667%;
+  background: #ededed;
+}
+
+/* line 15, ../sass/screen.scss */
+.siteSidebar {
+  padding: 0 0.8em;
+  float: left;
+  width: 33.33333%;
+  background: #ddd;
+}
+
+/* line 25, ../sass/screen.scss */
+.makeItSimple .simpleColumn {
+  padding: 0 0.8em;
+  float: left;
+  width: 20%;
+  outline: 1px dashed red;
+}
+
+/* line 34, ../sass/screen.scss */
+.itIsSimple .simpleColumn {
+  padding: 0 0.8em;
+  float: left;
+  width: 33.33333%;
+  outline: 1px dashed red;
+}

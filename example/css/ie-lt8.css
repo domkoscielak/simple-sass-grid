@@ -1,0 +1,8 @@
+/* line 2, ../sass/ie-lt8.scss */
+.mainContent, .siteSidebar, .simpleColumn {
+  padding: 0 !important;
+}
+/* line 4, ../sass/ie-lt8.scss */
+.mainContent > *, .siteSidebar > *, .simpleColumn > * {
+  margin: 0 10px !important;
+}

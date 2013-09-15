@@ -1,0 +1,46 @@
+$siteMaxWidth: 70em; // site's max width 
+$columnMaxGutter: 1.6em; // gutter between columns when site is in max width
+
+//Site wrapper placeholder - to be extended by site wrapper only
+%siteWrapper{
+	@extend %gridRow;
+	max-width: $siteMaxWidth;
+	width: 100%;
+	*{box-sizing: border-box}
+}
+
+// Grid row placeholder - to be extended by grid rows
+%gridRow{
+	margin: 0 auto;
+	width: 100%;
+	@extend %flexContainer;
+}
+
+// Grid column mixin - to be included by grid columns with fraction of parent's width passed 
+//	ie.: @include gridCol(1/3);
+@mixin gridCol($fraction){
+	padding: 0 ($columnMaxGutter / 2);
+	float: left;
+	width: colWidth($fraction);
+}
+
+//==
+
+%gridRow:before,%gridRow:after{
+	content: " ";
+	display: table;
+}
+%gridRow:after{
+	clear: both;
+}
+
+@function colWidth($fraction){
+	@return 100% * $fraction;
+}
+
+%flexContainer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+}
