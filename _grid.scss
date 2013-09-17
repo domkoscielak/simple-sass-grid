@@ -5,7 +5,6 @@ $columnMaxGutter: 1.6em; // gutter between columns when site is in max width
 %siteWrapper{
 	@extend %gridRow;
 	max-width: $siteMaxWidth;
-	width: 100%;
 	*{box-sizing: border-box}
 }
 
