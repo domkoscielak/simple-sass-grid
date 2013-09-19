@@ -1,31 +1,28 @@
-/* line 5, ../sass/partials/_grid.scss */
+/* line 5, ../sass/modules/_grid.scss */
 .wrapper {
   max-width: 70em;
-  width: 100%;
 }
-/* line 9, ../sass/partials/_grid.scss */
+/* line 8, ../sass/modules/_grid.scss */
 .wrapper * {
   box-sizing: border-box;
 }
 
-/* line 13, ../sass/partials/_grid.scss */
+/* line 12, ../sass/modules/_grid.scss */
 .wrapper, .makeItSimple, .itIsSimple {
   margin: 0 auto;
   width: 100%;
 }
-
-/* line 29, ../sass/partials/_grid.scss */
+/* line 16, ../sass/modules/_grid.scss */
 .wrapper:before, .makeItSimple:before, .itIsSimple:before, .wrapper:after, .makeItSimple:after, .itIsSimple:after {
   content: " ";
   display: table;
 }
-
-/* line 33, ../sass/partials/_grid.scss */
+/* line 20, ../sass/modules/_grid.scss */
 .wrapper:after, .makeItSimple:after, .itIsSimple:after {
   clear: both;
 }
 
-/* line 41, ../sass/partials/_grid.scss */
+/* line 41, ../sass/modules/_grid.scss */
 .wrapper, .makeItSimple, .itIsSimple {
   display: -webkit-flex;
   display: -moz-flex;

@@ -5,7 +5,6 @@ $columnMaxGutter: 1.6em; // gutter between columns when site is in max width
 %siteWrapper{
 	@extend %gridRow;
 	max-width: $siteMaxWidth;
-	width: 100%;
 	*{box-sizing: border-box}
 }
 
@@ -14,6 +13,13 @@ $columnMaxGutter: 1.6em; // gutter between columns when site is in max width
 	margin: 0 auto;
 	width: 100%;
 	@extend %flexContainer;
+	&:before, &:after{
+		content: " ";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
 }
 
 // Grid column mixin - to be included by grid columns with fraction of parent's width passed 
@@ -26,13 +32,7 @@ $columnMaxGutter: 1.6em; // gutter between columns when site is in max width
 
 //==
 
-%gridRow:before,%gridRow:after{
-	content: " ";
-	display: table;
-}
-%gridRow:after{
-	clear: both;
-}
+
 
 @function colWidth($fraction){
 	@return 100% * $fraction;
