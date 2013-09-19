@@ -50,8 +50,15 @@
   width: 33.33333%;
   background: #ddd;
 }
+/* line 18, ../sass/screen.scss */
+.siteSidebar .inSideColumn {
+  padding: 0 0.8em;
+  float: left;
+  width: 50%;
+  outline: 1px dashed red;
+}
 
-/* line 25, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .makeItSimple .simpleColumn {
   padding: 0 0.8em;
   float: left;
@@ -59,7 +66,7 @@
   outline: 1px dashed red;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .itIsSimple .simpleColumn {
   padding: 0 0.8em;
   float: left;
