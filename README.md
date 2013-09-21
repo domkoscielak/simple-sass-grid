@@ -36,3 +36,6 @@ example:
 
 ###Demo
 http://www.logconsole.com/samples/simple-fluid-sass-grid/
+
+###More detailed description
+http://logconsole.com/simple-fluid-sass-grid-system/
